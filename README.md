@@ -46,7 +46,7 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173), paste or import text, and the graph renders automatically.
+Open [http://localhost:3000](http://localhost:3000), paste or import text, and the graph renders automatically.
 
 ### 🔑 AI Setup
 
@@ -73,7 +73,7 @@ pnpm test      # Run tests
 
 ```
 src/
-├── ai/         → AI providers, prompts, rate limiting
+├── ai/         → OpenRouter provider, model catalog, prompts, rate limiting
 ├── core/       → NLP, graph engine, sentiment analysis
 ├── import/     → File parsers, URL fetchers
 ├── styles/     → CSS modules
@@ -93,9 +93,10 @@ src/
 | TypeScript + Vite | Build tooling |
 | D3.js | 2D force simulation |
 | 3d-force-graph + Three.js | 3D visualization |
-| compromise | NLP tokenization |
+| wink-nlp | NLP tokenization & lemmatization |
 | Tesseract.js | OCR (15 languages) |
 | pdfjs-dist | PDF extraction |
+| xlsx | Spreadsheet (XLSX/ODS) parsing |
 
 ---
 
@@ -105,7 +106,7 @@ All parameters are in `src/config.ts`:
 - Co-occurrence window & frequency thresholds
 - Graph limits & force simulation constants  
 - Cluster colors & node sizing
-- AI models & endpoints
+- OpenRouter endpoint & model catalog filtering
 
 ---
 
