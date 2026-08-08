@@ -112,4 +112,4 @@ All parameters are in `src/config.ts`:
 
 ## 📄 License
 
-NOL v1.0
+Apache 2.0
